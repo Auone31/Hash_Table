@@ -31,6 +31,9 @@ int main(int argc, char * argv[])
     node * Node_H = new node;
 	Node_H -> key = "Mario Goetze";
 
+	node * Node_I = new node;
+	Node_I -> key = "Theo Walcott";
+
 
 /*****************************************************************************
   * Add players to the hash table  
@@ -44,6 +47,7 @@ int main(int argc, char * argv[])
 	myHT.insert_node(Node_F);
 	myHT.insert_node(Node_G);
 	myHT.insert_node(Node_H);
+	myHT.insert_node(Node_I);
 
 
 	std::cout << "\n\n<--------Contents of the hash table-------->" << std::endl;
@@ -55,6 +59,7 @@ int main(int argc, char * argv[])
 	myHT.get_node("Zlatan Ibrahimovic");
 	myHT.get_node("Thomas Muller");
 	myHT.get_node("Mario Goetze");
+	myHT.get_node("Theo Walcott");
 
 
 /*****************************************************************************
@@ -74,6 +79,7 @@ int main(int argc, char * argv[])
 	myHT.get_node("Zlatan Ibrahimovic");
 	myHT.get_node("Thomas Muller");
 	myHT.get_node("Mario Goetze");
+	myHT.get_node("Theo Walcott");
 
 
 	return 0;
