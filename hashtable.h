@@ -34,7 +34,7 @@ public:
 
 
 /*****************************************************************************
-  * Functionality remains to be added
+  * Prints out the contents of the complete table
  *****************************************************************************/
 	void print_table();
 };

@@ -105,13 +105,27 @@ bool Hash_Table::get_node(std::string key)
 * Function: print_table()
 *****************************************************************************
 *
-* Functionality remains to be added
+* Prints out the contents of the complete table
 * 
 *
 ****************************************************************************/
 void Hash_Table::print_table()
 {
-
+	node * current_node;
+	for (int i = 0; i < length; ++i)
+	{
+		std::cout << "\nArray[" << i << "] : "; 
+		if (array[i].get_length() > 0)
+		{
+			current_node = array[i].first_node();
+			for (int j = 1; j <= array[i].get_length(); ++j)
+			{
+				std::cout << current_node -> key << "--";
+				current_node = current_node -> next_item;
+			}
+		}
+	}
+	std::cout << "\n"; 
 }
 
 

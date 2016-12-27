@@ -82,5 +82,8 @@ int main(int argc, char * argv[])
 	myHT.get_node("Theo Walcott");
 
 
+	std::cout << "\n\n<--------Printing Hash Table-------->" << std::endl;
+	myHT.print_table();
+
 	return 0;
 }
